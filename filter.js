@@ -18,10 +18,10 @@ const B = myFilterHow(A,moreThanTwo)
 
 
 
-const myFilterWithReducer = (arr,callback) => {
+const myFilterWithReduce = (arr,callback) => {
   const toReturn = callback(arr)
   return toReturn
 }
 
-const moreThanTwoForReducer = arr=> arr.reduce((cur,val)=>  val > 2 ? [...cur,val] : [])
+const moreThanTwoForReduce = arr=> arr.reduce((cur,val)=>  val > 2 ? [...cur,val] : [])
 const C = myFilterWithReducer(A,moreThanTwoForReducer)
