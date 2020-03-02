@@ -24,4 +24,4 @@ const myFilterWithReduce = (arr,callback) => {
 }
 
 const moreThanTwoForReduce = arr=> arr.reduce((cur,val)=>  val > 2 ? [...cur,val] : [])
-const C = myFilterWithReducer(A,moreThanTwoForReducer)
+const C = myFilterWithReduce(A,moreThanTwoForReduce)
