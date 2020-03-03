@@ -12,10 +12,10 @@ const B = mySomeHow(A,moreThanTwo)
 
 
 
-const mySomeWithReducer = (arr,f) => {
+const mySomeWithReduce = (arr,f) => {
   const toReturn = f(arr)
   return toReturn
 }
-const moreThanTwoForReducer = arr => arr.reduce((acc, item) => (item > 2) ?  true : false, [])
-const C = mySomeWithReducer(A,moreThanTwoForReducer)
+const moreThanTwoForReduce = arr => arr.reduce((acc, item) => (item > 2) ?  true : false, [])
+const C = mySomeWithReduce(A,moreThanTwoForReduce)
 
